@@ -1,0 +1,60 @@
+---
+layout: base
+role: homepage
+---
+
+<div class="template-home">
+    
+    <section class="section-slab section-slab-hero">
+        <div class="grid-box">
+            <div class="grid-item width-one-whole">
+                <h1>Welcome to the City of Springfield.</h1>
+                <p class="subtitle">How can we help you?</p>
+                <form class="site-search">
+                    <input type="search" placeholder="e.g., pay a parking ticket">
+                    <input type="submit" value="Search">
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="section-slab section-slab-city-services">
+        <h1>City Services</h1>
+        <div class="grid-box">
+            {% for service in site.data.categories.toplevel %}
+            <div class="grid-item width-one-third">
+                <h2><a href="{{ service.url | prepend: 'services/' }}">{{ service.name }}</a></h2>
+                <p>{{ service.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+<!--     <section class="section-slab section-slab-city-departments">
+        <h1>City Departments</h1>
+        <div class="grid-box">
+            {% for department in site.data.departments.toplevel %}
+            <div class="grid-item width-one-third">
+                <p><a href="#">{{ department.name }}</a></p>
+            </div>
+            {% endfor %}
+        </div>
+    </section> -->
+    <section class="section-slab">
+        <div class="grid-box">
+            <div class="grid-item width-one-whole">
+                <ul class="post-list">
+                    {% for post in site.posts %}
+                    <li>
+                        <h3>
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h3>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+</div>
