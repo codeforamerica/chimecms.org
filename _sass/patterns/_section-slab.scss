@@ -3,12 +3,29 @@
 		left: -$site-margins;
 		right: -$site-margins;
 	}
-	h1, h2, h3, h4, h5, h6, .grid-box {
+
+	padding: 6em $site-margins;
+
+	@include media($tablet-up) {
+		padding: {
+			top: 8em;
+			bottom: 8em;
+		}
+	}
+
+	.grid-box {
 		max-width: $site-max-width;
 		margin: {
 			left: auto;
 			right: auto;
 		}
 	}
-	padding: 2em $site-margins;
+
+	h2 {
+		font-size: $h3-font-size;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 2em;
+	}
+
 }

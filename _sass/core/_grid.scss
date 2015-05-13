@@ -28,6 +28,35 @@
 			@include span-columns(10);
 		}
 
+		.shift-one-half {
+			@include shift(6);
+		}
+
+		.shift-one-third {
+			@include shift(4);
+		}
+
+		.shift-two-third {
+			@include shift(8);
+		}
+
+
+		.shift-one-fourth {
+			@include shift(3);
+		}
+
+		.shift-three-fouths {
+			@include shift(9);
+		}
+
+		.shift-one-sixth {
+			@include shift(2);
+		}
+
+		.shift-five-sixths {
+			@include shift(10);
+		}
+
 		.end-row {
 			@include omega();
 		}

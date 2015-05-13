@@ -2,9 +2,10 @@
 	margin: 0 auto 6em auto;
 	max-width: $site-max-width;
 	.secondary-header {
-		border-bottom: 1px solid $color-grey-200;
 		margin-bottom: 4em;
+		border-bottom: 1px solid $color-blue-800;
 		h1 {
+			color: $color-blue-800;
 			font-size: $title-font-size;
 		}
 	}

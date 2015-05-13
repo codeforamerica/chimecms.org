@@ -1,0 +1,31 @@
+.button {
+	@include transition(.1s ease-out background-color);
+	padding: .5em 1em;
+	text-decoration: none;
+	display: inline-block;
+	background: $color-grey-700;
+	border-radius: $border-radius;
+	color: #fff;
+	line-height: 1em;
+	&:hover, &:visited, :active {
+		color: #fff;
+	}
+}
+
+.button-blue {
+	background-color: $color-blue-800;
+	&:hover {
+		background-color: darken($color-blue-800, 5%);
+	}
+}
+
+.button-red {
+	background-color: $color-red-700;
+	&:hover {
+		background-color: darken($color-red-700, 5%);
+	}
+}
+
+.button-large {
+	font-size: $h4-font-size;
+}

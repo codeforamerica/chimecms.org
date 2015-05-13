@@ -27,7 +27,14 @@ $color-grey-700:		#616161;
 $color-grey-800:		#424242;
 $color-grey-900:		#212121;
 
-$color-base-link:		#000000;
+$color-blue-800:		#004b6a;
+$color-blue-200:		#79b4d5;
+$color-blue-50:			#f1f7fb;
+
+$color-red-700:			#a91c3a;
+
+$color-base-font:		#333;
+$color-base-link:		$color-blue-800;
 
 
 // Mobile First Breakpoints
@@ -37,8 +44,8 @@ $widescreen-up:			1201px;
 
 
 // Magic Numbers
-$site-max-width:		960px;
+$site-max-width:		800px;
 $site-margins:			40px;
 $article-max-width:		600px;
-$border-radius:			0px;
+$border-radius:			3px;
 $box-shadow:			0 0 2px rgba(#000, .3);

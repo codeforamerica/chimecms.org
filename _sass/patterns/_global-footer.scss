@@ -1,5 +1,22 @@
 .global-footer {
-	background-color: $color-grey-200;
+	background-color: $color-blue-800;
+	color: #fff;
 	margin: 0;
 	padding: 1em $site-margins;
+	font-size: $small-font-size;
+	.cfa-logo {
+		max-width: 100px;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	.dfd-initiative {
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		margin-bottom: 1em;
+		font-size: $small-font-size;
+	}
+	.colophon {
+		margin-bottom: 1em;
+		font-size: $small-font-size;
+	}
 }

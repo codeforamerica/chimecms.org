@@ -1,43 +1,41 @@
 .global-header {
-	background-color: $color-grey-800;
-	color: #fff;
-	padding: 1em $site-margins;
-	h1 {
-		margin: 0;
-		font-size: $h3-font-size;
+	position: relative;
+	z-index: 2;
+	background-color: $color-blue-50;
+	color: $color-blue-800;
+	padding: 1.5em $site-margins;
 
+	.homepage & {
+		background-color: transparent;
+	}
+
+	.logo {
+		margin: 0;
 		a {
+			display: block;
+			width: 192px;
+			height: 28px;
+			background-image: url('../media/images/chime_logo.png');
+			background-size: 100% auto;
+			font-size: $base-font-size;
+			text-indent: -9999px;
 			color: inherit;
 			text-decoration: none;
 		}
 	}
-
-	.site-search {
-
-		input[type="search"], input[type="submit"] {
-			color: #000;
-			height: 2em;
-			width: calc(100% - 2em);
-			margin: {
-				top: 2em;
-				bottom: .5em;
-			}
-			border: 0;
-			@include media($tablet-up) {
-				font-size: $small-font-size;
-				margin: {
-					top: 0;
-					bottom: 0;
-				}
-			}
-			.lt-ie9 & {
-				width: 85%;
-			}
+	.global-nav {
+		padding-top: .3em;
+		@include media($tablet-up) {
+			text-align: right;
 		}
-		input[type="submit"] {
-			width: 2em;
-			.lt-ie9 & {
-				width: 15%;
+		.global-nav-link {
+			margin-right: 1em;
+			color: inherit;
+			text-decoration: none;
+			display: inline-block;
+			font-weight: bold;
+			&:hover {
+				text-decoration: underline;
 			}
 		}
 	}

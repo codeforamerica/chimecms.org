@@ -9,11 +9,14 @@
 		margin: 2em 0;
 		li {
 			&.is-selected {
-				background-color: $color-grey-200;
+				background-color: $color-blue-800;
+				a, p {
+					color: #fff;
+				}
 			}
 			.nav-sub-service-link {
 				font-weight: bold;
-				color: inherit;
+				color: $color-blue-800;
 			}
 			p {
 				margin-top: .5em;
