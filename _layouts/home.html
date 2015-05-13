@@ -3,58 +3,67 @@ layout: base
 role: homepage
 ---
 
-<div class="template-home">
-    
+<div class="template-home">    
     <section class="section-slab section-slab-hero">
         <div class="grid-box">
             <div class="grid-item width-one-whole">
-                <h1>Welcome to the City of Springfield.</h1>
-                <p class="subtitle">How can we help you?</p>
-                <form class="site-search">
-                    <input type="search" placeholder="e.g., pay a parking ticket">
-                    <input type="submit" value="Search">
-                </form>
-                
+                <p class="subtitle">A simple, modern content management system designed for the work of government.</p>
+                <a href="" class="button button-red button-large">Request a Demo</a>
+                <img class="product-screenshot" src="media/images/product-edit.png">
+            </div>
+            <div class="grid-item width-two-thirds shift-one-sixth">
+
             </div>
         </div>
     </section>
 
-    <section class="section-slab section-slab-city-services">
-        <h1>City Services</h1>
+    <section class="section-slab section-slab-why">
         <div class="grid-box">
-            {% for service in site.data.categories.toplevel %}
-            <div class="grid-item width-one-third">
-                <h2><a href="{{ service.url | prepend: 'services/' }}">{{ service.name }}</a></h2>
-                <p>{{ service.description }}</p>
+            <div class="grid-item width-two-thirds shift-one-sixth end-rw">
+                <h2>In this new world, access for all means digital.</h2>
             </div>
-            {% endfor %}
+            <div class="grid-item width-one-half">
+              <p>Residents expect to find the same services online as they would find inside city hall. Further, we now know that 64% of American adults own a smartphone of some kind and many underserved citizens use a smartphone as their only means of online access. People need and expect to do city business from wherever they are.</p>  
+            </div>
+            <div class="grid-item width-one-third shift-one-sixth end-row">
+                <img src="media/images/access.png" alt="community">
+            </div>
+            <div class="grid-item width-one-whole">
+                <a href="#" class="button button-blue">Learn more about our principles</a>
+            </div>
         </div>
     </section>
-<!--     <section class="section-slab section-slab-city-departments">
-        <h1>City Departments</h1>
+    <section class="section-slab section-slab-how">
         <div class="grid-box">
-            {% for department in site.data.departments.toplevel %}
-            <div class="grid-item width-one-third">
-                <p><a href="#">{{ department.name }}</a></p>
+            <div class="grid-item width-two-thirds shift-one-sixth">
+                <h2>Built specifically for governments to meet the needs of their residents in the 21st century.</h2>
             </div>
-            {% endfor %}
+            <div class="grid-item width-one-third">
+                <img src="media/images/analytics.png" alt="analytics" class="feature-image feature-image-analytics">
+                <h3>Site Analytics</h3>
+                <p>Your site should be based on what your residents need. Track how well individual pages perform and modify content based on real data.</p>
+            </div>
+            <div class="grid-item width-one-third">
+                <img src="media/images/responsive.png" alt="preview" class="feature-image feature-image-preview">
+                <h3>Live Preview.</h3>
+                <p>Your content is being viewed on desktops, tablets, and smartphones. See how your content actually looks across devices before you publish.</p>
+            </div>
+            <div class="grid-item width-one-third end-row">
+                <img src="media/images/review.png" alt="review" class="feature-image feature-image-review">
+                <h3>Built-in Review Process.</h3>
+                <p>Every change should be verified by a second pair of eyes. Easily submit changes to other teammates for review.</p>
+            </div>
+            <div class="grid-item width-one-whole">
+                <a href="" class="button button-blue">View all features</a>
+            </div>
         </div>
-    </section> -->
-    <section class="section-slab">
+    </section>
+    <section class="section-slab section-slab-cta">
         <div class="grid-box">
             <div class="grid-item width-one-whole">
-                <ul class="post-list">
-                    {% for post in site.posts %}
-                    <li>
-                        <h3>
-                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                        </h3>
-                    </li>
-                    {% endfor %}
-                </ul>
+                <h2>Ready to learn more about Chime?</h2>
+                <a href="" class="button button-large button-red">Request a Demo</a>
             </div>
         </div>
     </section>
-
-
 </div>

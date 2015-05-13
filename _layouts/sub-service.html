@@ -29,7 +29,7 @@ layout: base
 		<div class="grid-item width-one-half end-row">
 			<nav class="nav-article-list">
 				<h1>{{ page.title }}</h1>
-				<ul>
+				<ol>
 				{% for article in site.pages %}
 					{% if article.categories == page.category %}
 					{% if article.subcategories == page.subcategory %}
@@ -37,7 +37,7 @@ layout: base
 					{% endif %}
 					{% endif %}
 				{% endfor %}
-				</ul>
+				</ol>
 				
 			</nav>
 		</div>

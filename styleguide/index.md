@@ -308,16 +308,15 @@ This is the header that appears at the top of every page.
 <div class="preview">
 	<header class="global-header">
 		<div class="grid-box">
-			<div class="grid-item width-one-half">
-				<h1><a href="/">City of Oakland</a></h1>
+			<div class="grid-item width-one-third">
+				<h1 class="logo"><a href="#">Chime CMS</a></h1>
 			</div>
-			<div class="grid-item width-one-half">
-				{% unless page.role == 'homepage' %}
-				<form class="site-search">
-				    <input type="search" placeholder="e.g., pay a parking ticket">
-				    <input type="submit" value="Search">
-				</form>
-				{% endunless %}
+			<div class="grid-item width-two-thirds end-row">
+				<nav class="global-nav">
+				    <a href="" class="global-nav-link">Features</a>
+				    <a href="/services/resources" class="global-nav-link">Resources</a>
+				    <a href="" class="global-nav-link">About</a>
+				</nav>
 			</div>
 		</div>
 	</header>	
